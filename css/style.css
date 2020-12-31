@@ -973,32 +973,41 @@ p.main-txt {
 }
 
 .lawyer-wrap .layer-career h3 {
-  padding: 17px 0 0;
   margin: 29px 0 0;
-  font-size: 18px;
-  font-weight: 500;
+  padding: 17px 0 0;
   border-top: 1px solid #ebebeb;
   color: #333;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .lawyer-wrap li {
   position: relative;
-  padding-left: 12px;
   margin: 3px 0 0;
-  font-size: 16px;
+  padding-left: 12px;
   color: #666;
+  font-size: 16px;
 }
 
 .lawyer-wrap li:after {
+  content: "";
   display: block;
   position: absolute;
-  left: 0;
   top: 50%;
-  content: '';
-  margin-top: -2px;
+  left: 0;
+  background: #b79575;
   width: 4px;
   height: 4px;
-  background: #b79575;
+  margin-top: -2px;
+}
+
+.lawyer-wrap h3 {
+  margin: 1rem 0;
+  padding: .5rem 0 0;
+  border-top: 1px solid #ebebeb;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 @media (max-width: 767px) {
