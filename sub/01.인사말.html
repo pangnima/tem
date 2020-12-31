@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 메타태그 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="">
+
+	<meta property="og:site_name" content="$subject">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- 타이틀 -->
+	<title>인사말</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="/css/style.css">
+
+	<!-- 스크립트 -->
+	<script src="/js/jQuery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/common.js"></script>
+
+	<!-- HTML Include 개발시 제거 -->
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<!--//  HTML Include 개발시 제거 -->
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="/include/Header.html"></div>
+		<!-- // HEADER INCLUDE -->
+
+		<!-- 컨텐츠 -->
+		<main id="page-container" class="sub-container">
+			<!-- 서브 비주얼 -->
+			<div class="sub-visual">
+				<figure class="figure">
+					<img src="/images/sub/sub-visual.jpg" class="figure-img img-fluid" alt="">
+					<figcaption class="figure-caption">인사말</figcaption>
+				</figure>
+			</div>
+
+			<!-- 페이지 내용 -->
+			<div class="sub-contents">
+				<div class="greeting-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="greeting">
+								<div class="top-box">
+									<h3>
+										<span>당신의 상황을 최대한 변호해</span><br>
+										<span>줄 곳은 여기뿐입니다.</span>
+									</h3>
+									<p>
+										SOBIC 성범죄전담센터는 어려운 상황에서도 <br>
+										희망을 가질 수 있도록 도움을 드립니다. <br>
+										가장 효율적인 전략으로 사건을 해결하겠습니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="bottom-box">
+								<h4>성범죄, 전문변호사와 꼭 상담을 해야할까요?</h4>
+								<div class="row">
+									<div class="col-md-6">
+										<p>
+											성범죄의 종류는 정말 다양합니다. 강간, 강제추행, 준강간, 준강제추행, 업무상 위력등에 의한
+											간음죄, 13세 미만 간음, 추행죄 미성년자 등에 대한 간음죄, 강간 등에 의하 치사상, 특수강간,
+											특수강도강간, 공연음란, 음란물 등등…
+										</p>
+										<p>
+											주변과 매스컴을 살펴보더라도 정말 많은 성범죄 사건이 발생합니다. 미성년자, 성인 대상
+											범죄는 물론 성범죄 유무에 따라 처벌의 수위도 달라집니다. 이렇듯 가볍게 판단하고 변호사를
+											선임하면 안됩니다. 몸이 아플때 전문의를 찾듯 법률적 도움이 필요할때 전문변호사를 찾아야 합니다.
+										</p>
+									</div>
+									<div class="col-md-6">
+										<p>
+											같은 범죄를 저질렀더라도 경찰 및 검찰 조사 단계에서 어떻게 대처를 하느냐에 따라 성범죄의
+											형량은 천지차이입니다. 누구는 무죄를 받고 누구는 실형을 받을 수 있습니다. 성범죄 가해자,
+											피해자 모두에게 전문변호사가 필요하며 제대로된 처벌, 적정금액의 합의금을 받기위해서는
+											성범죄 전문 변호사의 도움이 필요합니다.
+										</p>
+										<p>
+											성범죄에 연루되셨다면 지금 바로 상담하세요.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //페이지 내용 -->
+
+		</main>
+		<!-- // 컨텐츠 -->
+
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="/include/Footer.html"></div>
+		<!-- // HEADER INCLUDE -->
+	</div>
+
+	<!-- 개발시 제거 -->
+	<script>
+		includeHTML();
+	</script>
+	<!-- // 개발시 제거 -->
+
+</body>
+
+</html>

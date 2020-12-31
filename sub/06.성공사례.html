@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 메타태그 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="">
+
+	<meta property="og:site_name" content="$subject">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- 타이틀 -->
+	<title>성공사례</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="/css/style.css">
+
+	<!-- 스크립트 -->
+	<script src="/js/jQuery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/common.js"></script>
+
+	<!-- HTML Include 개발시 제거 -->
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<!--//  HTML Include 개발시 제거 -->
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="/include/Header.html"></div>
+		<!-- // HEADER INCLUDE -->
+
+		<!-- 컨텐츠 -->
+		<main id="page-container" class="sub-container">
+			<!-- 서브 비주얼 -->
+			<div class="sub-visual">
+				<figure class="figure">
+					<img src="/images/sub/sub-visual.jpg" class="figure-img img-fluid" alt="">
+					<figcaption class="figure-caption">성공사례</figcaption>
+				</figure>
+			</div>
+
+			<!-- 페이지 내용 -->
+			<div class="sub-contents">
+				<!-- 성공사례 -->
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<!-- 타이틀 -->
+							<h4 class="board-title">성공사례</h4>
+							<!-- // 타이틀 -->
+
+							<!-- 검색 -->
+							<div class="search-box">
+								<input class="form-control" placeholder="검색어를 입력하세요.">
+								<button class="btn btn-primary">검색</button>
+							</div>
+							<!-- // 검색 -->
+
+							<!-- 게시판 -->
+							<div class="table-wrap">
+								<table class="table">
+									<colgroup>
+										<col class="number" style="width:80px">
+										<col>
+										<col class="writer" style="width:100px">
+										<col style="width:110px">
+									</colgroup>
+									<thead>
+										<tr>
+											<th class="number">번호</th>
+											<th class="title">제목</th>
+											<th class="writer">작성자</th>
+											<th class="data">등록일</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="number">9</td>
+											<td class="title"><a href="#">상사와 부하 사이 업무상위력등에 의한 추행 무혐의 사례 </a></td>
+											<td class="writer">관리자</td>
+											<td class="date">2018-10-12</td>
+										</tr>
+										<tr>
+											<td class="number">8</td>
+											<td class="title"><a href="#">이혼 안 해줘 아내 살해한 남편</a></td>
+											<td class="writer">관리자</td>
+											<td class="date">2018-10-12</td>
+										</tr>
+										<tr>
+											<td class="number">7</td>
+											<td class="title"><a href="#">성매매 사건에서 변호사를 선임하는 이유</a></td>
+											<td class="writer">관리자</td>
+											<td class="date">2018-10-12</td>
+										</tr>
+										<tr>
+											<td class="number">6</td>
+											<td class="title"><a href="#">강제추행 기소유예로 승소</a></td>
+											<td class="writer">관리자</td>
+											<td class="date">2018-10-12</td>
+										</tr>
+										<tr>
+											<td class="number">5</td>
+											<td class="title"><a href="#">잘못해 여자샤워실 들어갔다가 천만 원??</a></td>
+											<td class="writer">관리자</td>
+											<td class="date">2018-10-12</td>
+										</tr>
+										<tr>
+											<td class="number">4</td>
+											<td class="title"><a href="#">23살로 알고 ‘조건만남’ 했는데 미성년, 대응법은?</a></td>
+											<td class="writer">관리자</td>
+											<td class="date">2018-10-12</td>
+										</tr>
+										<tr>
+											<td class="number">3</td>
+											<td class="title"><a href="#">카메라이용쵤영죄 혐의없음 무죄로 승소</a></td>
+											<td class="writer">관리자</td>
+											<td class="date">2018-10-12</td>
+										</tr>
+										<tr>
+											<td class="number">2</td>
+											<td class="title"><a href="#">HIV보균 사실 숨기고 성관계, 치료 중이었다면 무죄?</a></td>
+											<td class="writer">관리자</td>
+											<td class="date">2018-10-12</td>
+										</tr>
+										<tr>
+											<td class="number">1</td>
+											<td class="title"><a href="#">묻힐 뻔했던 ‘AA 성폭행’ 사건, 이렇게 알려졌다</a></td>
+											<td class="writer">관리자</td>
+											<td class="date">2018-10-08</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- // 게시판 -->
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- //성공사례 -->
+			</div>
+			<!-- //페이지 내용 -->
+
+		</main>
+		<!-- // 컨텐츠 -->
+
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="/include/Footer.html"></div>
+		<!-- // HEADER INCLUDE -->
+	</div>
+
+	<!-- 개발시 제거 -->
+	<script>
+		includeHTML();
+	</script>
+	<!-- // 개발시 제거 -->
+
+</body>
+
+</html>
