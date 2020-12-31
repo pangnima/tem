@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 메타태그 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="">
+
+	<meta property="og:site_name" content="$subject">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- 타이틀 -->
+	<title>성공사례</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="/css/style.css">
+
+	<!-- 스크립트 -->
+	<script src="/js/jQuery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/common.js"></script>
+
+	<!-- HTML Include 개발시 제거 -->
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<!--//  HTML Include 개발시 제거 -->
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="/include/Header.html"></div>
+		<!-- // HEADER INCLUDE -->
+
+		<!-- 컨텐츠 -->
+		<main id="page-container" class="sub-container">
+			<!-- 서브 비주얼 -->
+			<div class="sub-visual">
+				<figure class="figure">
+					<img src="/images/sub/sub-visual.jpg" class="figure-img img-fluid" alt="">
+					<figcaption class="figure-caption">성공사례</figcaption>
+				</figure>
+			</div>
+
+			<!-- 페이지 내용 -->
+			<div class="sub-contents">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<!-- 타이틀 -->
+							<h4 class="board-title">법무법인 소빅 성공사례</h4>
+							<!-- // 타이틀 -->
+						</div>
+					</div>
+
+					<div class="table-wrap mt-5">
+						<table class="table view">
+							<thead>
+								<tr>
+									<th>
+										<h3 class="title">몰래 찍은 사진까지 버젓이 저장되어 있는데, 무죄판결?</h3>
+										<span class="name">관리자</span>
+										<span class="s-date">2018-10-12</span>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										과거에 ‘몰래카메라’라고 하면 누군가를 속여서 재밌는 상황을 연출하는 것으로, 부정적인 느낌은 들지 않았는데요. 이제 '몰래카메라'라는 말은
+										듣기만 해도 섬뜩합니다. 지하철, 공중 화장실 등 공공장소에서는 물론 내가 살고 있는 집까지 몰래카메라가 설치되어있을 수도 있다는 두려움이 있기
+										때문입니다.
+
+										몰래카메라 촬영을 했을 경우, 성폭력범죄의 처벌 등에 관한 특례법에 따라 처벌받게 됩니다.
+
+										성폭력범죄의 처벌 등에 관한 특례법 제14조(카메라 등을 이용한 촬영)
+
+										① 카메라나 그 밖에 이와 유사한 기능을 갖춘 기계장치를 이용하여 성적 욕망 또는 수치심을 유발할 수 있는 다른 사람의 신체를 그 의사에 반하여
+										촬영하거나 그 촬영물을 반포·판매·임대·제공 또는 공공연하게 전시·상영한 자는 5년 이하의 징역 또는 1천만원 이하의 벌금에 처한다.
+
+										하지만, 지하철에서 여성의 신체를 몰래 찍다가 현행범으로 잡힌 이 남성은 결과적으로 ‘무죄’ 판결을 받았습니다.(서울서부지법
+										2016고단2563) 어떻게 된 일일까요?
+
+
+										유모씨는 지하철역 승강장에서 스마트폰으로 여성의 다리와 엉덩이를 몰래 촬영합니다. 승강장, 열차 안, 계단 등에서 12분 동안 4번이나 여성들을
+										촬영했고, 이를 알게 된 주변사람이 유씨를 붙잡았습니다.
+
+										핸드폰으로 촬영한 사진을 지울 것 같아 사람들은 유씨의 핸드폰을 빼앗은 뒤, 출동한 경찰에게 줬습니다. 경찰은 바로 사진을 확인하고 현행범으로
+										체포했으며, 유씨는 경찰 조사에서 자백했습니다.
+
+										그러나 결국 서울서부지방법원은 증거가 없다고 하며 무죄를 선고했는데요. 문제가 무엇이었을까요? 바로 경찰 때문이었습니다.
+
+										사건의 가장 핵심적인 증거였던 스마트폰. 하지만 형사소송법상 압수는 법원이 발부한 영장에 의해서만 이뤄질 수 있습니다. 사람들이 유씨의
+										스마트폰을 빼앗아 경찰에 제출 했다면 이는 영장 없는 압수에 해당하는 것입니다. 따라서 경찰이 별도의 절차를 밟아 유씨의 스마트폰을 압수했어야
+										하는데 압수수색영장을 청구하지 않아 위법한 증거가 되었습니다.
+
+
+										결국 이번 사건은 경찰이 영장 없이 '임의제출' 받은 스마트폰이 증거능력이 없었기 때문에 무죄판결이 난 사건이라고 할 수 있습니다.
+
+										영장주의(令狀主義)란 국민의 기본적 인권을 침해하는 경우가 없도록 하기 위하여 강제처분 시 법관의 영장을 받도록 하는 원칙입니다. 즉,
+										강제처분을 함에는 원칙적으로 법원의 영장이 필요하다는 것입니다. 비록 시민들의 도움으로 검거된 유씨가 처벌받지 못하게 된 점은 아쉽지만, 법원은
+										범죄의 처벌보다 절차적 정의, 즉 영장주의를 지키는 것이 더 중요한 가치로 여기고 있다는 것! 한편으로는 다행이라고 여겨야 할 것 같습니다.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="row justify-content-center mt-3">
+						<button type="button" class="btn btn-primary">목록</button>
+					</div>
+
+				</div>
+			</div>
+			<!-- //페이지 내용 -->
+
+		</main>
+		<!-- // 컨텐츠 -->
+
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="/include/Footer.html"></div>
+		<!-- // HEADER INCLUDE -->
+	</div>
+
+	<!-- 개발시 제거 -->
+	<script>
+		includeHTML();
+	</script>
+	<!-- // 개발시 제거 -->
+
+</body>
+
+</html>

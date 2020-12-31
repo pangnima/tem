@@ -1164,6 +1164,12 @@ p.main-txt {
           transform: translateX(-50%);
 }
 
+.board-title-2 {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
 .search-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1388,8 +1394,100 @@ p.main-txt {
 
 .table-wrap .table th, .table-wrap .table td {
   padding: 12px;
-  vertical-align: middle;
   font-size: 16px;
+  vertical-align: middle;
+}
+
+/* 게시판 view */
+.table-wrap .table.view th {
+  padding: 2rem;
+}
+
+.table-wrap .table.view th .title {
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.table-wrap .table.view th span {
+  font-size: 16px;
+  position: relative;
+}
+
+.table-wrap .table.view th span:before {
+  content: "";
+  display: inline-block;
+  background: #000;
+  width: 1px;
+  height: 14px;
+  margin: 0 1rem;
+}
+
+.table-wrap .table.view th span.name::before {
+  display: none;
+}
+
+.table-wrap .table.view td {
+  line-height: 1.6;
+  text-align: left;
+  word-break: keep-all;
+}
+
+.table-wrap .table.writee th {
+  padding: 2rem;
+}
+
+.table-wrap .table.writee th .title {
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.table-wrap .table.writee th span {
+  font-size: 16px;
+  position: relative;
+}
+
+.table-wrap .table.writee th span:before {
+  content: "";
+  display: inline-block;
+  background: #000;
+  width: 1px;
+  height: 14px;
+  margin: 0 1rem;
+}
+
+.table-wrap .table.writee th span.name::before {
+  display: none;
+}
+
+.table-wrap .table.writee td {
+  line-height: 1.6;
+  text-align: left;
+  word-break: keep-all;
+}
+
+.password-box {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.password-box h2 {
+  font-size: 24px;
+  background: #337ab7;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.password-box .form-group {
+  padding: 2rem;
+  border: solid 1px #eee;
+}
+
+.password-box .form-group label {
+  font-size: 18px;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 767px) {

@@ -342,13 +342,13 @@ p.main-txt{margin:0 0 45px; color:#999; line-height:1.1; letter-spacing:-.8px; t
 
 .board-title{position:relative; text-align:center; font-size:34px; font-weight:bold;}
 .board-title:before{content:""; position:absolute; left:50%; top:-10px; width:100px; padding-top:7px; border-top:2px solid #1f1f1f; transform:translateX(-50%);}
+.board-title-2{font-size:22px; font-weight: bold; padding:1rem 0;}
 .search-box{display:flex; margin:2rem 0;
 	button{margin-left:1rem; flex:0 0 auto;}
 	input{max-width:300px; margin-left:auto;}
 }
 @media (max-width:767px){
 	.board-title {display: none;}
-
 }
 
 
@@ -401,8 +401,41 @@ p.main-txt{margin:0 0 45px; color:#999; line-height:1.1; letter-spacing:-.8px; t
 	}
 	.title{text-align:left;}
 }
-.table-wrap .view-info h3 { font-size: 21px; }
-.table-wrap .table th, .table-wrap .table td { padding: 12px; vertical-align: middle; font-size: 16px; }
+.table-wrap .view-info h3{font-size:21px;}
+.table-wrap .table th , .table-wrap .table td{padding:12px; font-size:16px; vertical-align:middle;}
+
+/* 게시판 view */
+.table-wrap .table {
+	&.view {
+		th {padding:2rem;
+			.title {font-size:21px; text-align: center; margin-bottom:1rem}
+			span {font-size:16px; position:relative;
+				&:before{content:""; display:inline-block; background:#000; width:1px; height:14px; margin:0 1rem;}
+				&.name::before{display: none;}
+			}
+		}
+		td{line-height:1.6; text-align:left; word-break:keep-all;}
+	}
+	&.writee {
+		th {padding:2rem;
+			.title {font-size:21px; text-align: center; margin-bottom:1rem}
+			span {font-size:16px; position:relative;
+				&:before{content:""; display:inline-block; background:#000; width:1px; height:14px; margin:0 1rem;}
+				&.name::before{display: none;}
+			}
+		}
+		td{line-height:1.6; text-align:left; word-break:keep-all;}
+	}
+}
+
+.password-box {max-width:480px; margin:0 auto;
+	h2 {font-size: 24px; background:#337ab7; padding:1rem; text-align: center; color:#fff;}
+	.form-group{
+		padding:2rem;
+		border:solid 1px #eee;
+		label {font-size:18px; margin-bottom:1rem;}
+	}
+}
 
 @media (max-width:767px) { 
 	.contact-wrap .contact-box p { padding: 84px 12px;  font-size: 22px;}
