@@ -25,6 +25,10 @@ body, html {
   font-weight: 400;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -114,6 +118,10 @@ p.main-txt {
   p.main-txt {
     margin: 0 0 15px;
   }
+}
+
+.row .row {
+  margin: 0;
 }
 
 .zero {
@@ -1022,6 +1030,10 @@ p.main-txt {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+}
+
+.work-category .row .row {
+  margin: 0;
 }
 
 .work-category .specialty {

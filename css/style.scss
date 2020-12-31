@@ -1,9 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 html , body , div , span , applet , object , iframe , h1 , h2 , h3 , h4 , h5 , h6 , p , blockquote , pre , a , abbr , acronym , address , big , cite , code , del , dfn , em , img , ins , kbd , q , s , samp , small , strike , strong , sub , sup , tt , var , b , u , i , center , dl , dt , dd , ol , ul , li , fieldset , form , label , legend , table , caption , tbody , tfoot , thead , tr , th , td , article , aside , canvas , details , embed , figure , figcaption , footer , header , hgroup , menu , nav , output , ruby , section , summary , time , mark , audio , video{margin:0; padding:0; border:0; font:inherit; font-size:100%;}
-article , aside , details , figcaption , figure , footer , header , hgroup , menu , nav , section{display:block; }
+article , aside , details , figcaption , figure , footer , header , hgroup , menu , nav , section{display:block;}
 html{line-height:1.3; -webkit-text-size-adjust:100%;}
-body , html{width:100%; height:100%; font-family:"Noto Sans KR", sans-serif; font-size: 14px; font-weight: 400;}
+body , html{width:100%; height:100%; font-family:"Noto Sans KR", sans-serif; font-size:14px; font-weight:400;}
+body{overflow-x:hidden;}
 ol , ul{list-style:none;}
 table{border-collapse:collapse; border-spacing:0;}
 a , a:link , a:focus , a:hover , a:active{background:transparent; color:#000; text-decoration:none; text-decoration:none;}
@@ -13,14 +14,13 @@ button , input , optgroup , select , textarea{margin:0; padding:0; line-height:1
 button , [type="button"] , [type=reset] , [type=submit]{-webkit-appearance:button;}
 button::-moz-focus-inner , [type=button]::-moz-focus-inner , [type=reset]::-moz-focus-inner , [type=submit]::-moz-focus-inner{padding:0; border-style:none;}
 .blind{display:block; overflow:hidden; position:absolute; top:0; left:0; background:0 0; width:0; height:0; border:0; line-height:0; font-size:0;}
-
 h3.main-tit{margin:0 0 17px; color:#3d3e5b; line-height:1.1; letter-spacing:-.8px; text-align:center; font-size:40px; font-weight:700; flex:0 0 100%;}
 p.main-txt{margin:0 0 45px; color:#999; line-height:1.1; letter-spacing:-.8px; text-align:center; font-size:16px; font-weight:400; flex:0 0 100%;}
-@media (max-width:767px) {
-	h3.main-tit { font-size: 30px; }
-	p.main-txt { margin: 0 0 15px;}
+@media (max-width:767px){
+	h3.main-tit{font-size:30px;}
+	p.main-txt{margin:0 0 15px;}
 }
-
+.row {.row{margin:0;}}
 .zero{padding-right:0; padding-left:0;}
 .line-one { overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .line-two { overflow: hidden; white-space: normal; line-height: 1.2; height: 3.6em; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
@@ -319,6 +319,7 @@ p.main-txt{margin:0 0 45px; color:#999; line-height:1.1; letter-spacing:-.8px; t
 
 /* 업무분야 */
 .work-category .row {flex:0 0 100%;}
+.work-category .row .row {margin:0;}
 .work-category .specialty{background:url("../images/sub/bg_specialty1.jpg") no-repeat left top; background-size:cover; margin:0 0 37px ;}
 .work-category .specialty.bg2{background:url("../images/sub/bg_specialty2.jpg") no-repeat left top; background-size:cover;}
 .work-category .top-box{display:inline-block; background:#aa8a6d; margin:80px; padding:122px 48px 48px 48px; color:#fff; opacity:.9;}
