@@ -460,6 +460,18 @@ p.main-txt{margin:0 0 45px; color:#999; line-height:1.1; letter-spacing:-.8px; t
 	.banner.top { position: fixed; top:0; left:0; width: 100%;}
 }
 
+
+/* 모달 */
+.modal-title{font-size:18px; font-weight:bold;}
+.modal-wrap h2{margin-top:20px; margin-bottom:10px; color:#333; font-size:28px;}
+.modal-wrap h3{line-height:1.3; font-size:23px;}
+.modal-wrap h4{color:#333; line-height:1.3; letter-spacing:-.8px; font-size:18px; font-weight: bold; margin:.5rem 0;}
+.modal-wrap h5{color:#333; line-height:1.3; letter-spacing:-.8px; font-size:17px; font-weight: bold; margin:.5rem 0;}
+.modal-wrap p{margin:0 0 15px; color:#333; text-align:left; font-size:14px;}
+.modal-wrap ul li{margin-bottom:6px; font-size:15px; font-weight:500;}
+.modal-wrap ul li ul li{margin-left:5px; font-size:13px; font-weight:300;}
+.modal-footer label{margin:0 12px;}
+
 /*푸터*/
 .footer{background:#333; color:#fff; padding:2rem}
 .footer .info-box{
